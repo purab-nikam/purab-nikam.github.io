@@ -1,15 +1,15 @@
-const menuButton = document.getElementById('menuButton');
-const navLinks = document.getElementById('navLinks');
+const menuToggle = document.getElementById('menuToggle');
+const navigation = document.getElementById('navigation');
 
-menuButton.addEventListener('click', function () {
-  const menuIsOpen = navLinks.classList.toggle('show');
-  menuButton.setAttribute('aria-expanded', menuIsOpen);
+menuToggle.addEventListener('click', function () {
+  const isOpen = navigation.classList.toggle('show');
+  menuToggle.setAttribute('aria-expanded', isOpen);
 });
 
-navLinks.querySelectorAll('a').forEach(function (link) {
+navigation.querySelectorAll('a').forEach(function (link) {
   link.addEventListener('click', function () {
-    navLinks.classList.remove('show');
-    menuButton.setAttribute('aria-expanded', 'false');
+    navigation.classList.remove('show');
+    menuToggle.setAttribute('aria-expanded', 'false');
   });
 });
 
