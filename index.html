@@ -3,104 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Purab Nikam — B.Sc. Computer Science student interested in web applications, dashboards and data." />
+  <meta name="description" content="Purab Nikam — B.Sc. Computer Science student interested in dashboard development, data and web applications.">
   <title>Purab Nikam | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="navbar">
-    <a class="logo" href="#home"><span>PN</span> Purab Nikam</a>
-    <button class="menu-button" id="menuButton" aria-label="Open menu" aria-expanded="false">☰</button>
-    <nav id="navLinks">
-      <a href="#home">Home</a>
+    <a class="brand" href="#home"><span class="brand-mark">&lt;/&gt;</span> Purab <b>Nikam</b></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav id="navigation">
+      <a class="active" href="#home">Home</a>
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </nav>
+    <a class="nav-contact" href="mailto:nikampurab105@gmail.com?subject=Portfolio%20Enquiry">Let's Connect ↗</a>
   </header>
 
   <main>
     <section class="hero" id="home">
-      <div class="hero-text">
+      <div class="hero-copy">
+        <div class="availability"><span></span> Open to internship opportunities</div>
         <p class="eyebrow">HELLO, I'M</p>
         <h1>Purab <span>Nikam</span></h1>
         <h2>B.Sc. Computer Science Student</h2>
-        <p class="intro">I'm interested in building useful web applications and clear, easy-to-understand dashboards that turn information into useful insights.</p>
-        <div class="buttons">
-          <a class="button primary" href="#projects">View My Work ↗</a>
-          <a class="button outline" href="#contact">Contact Me</a>
+        <p class="intro">I'm interested in building useful web applications, working with data, and creating clear dashboards that turn information into meaningful insights.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="mailto:nikampurab105@gmail.com?subject=Internship%20or%20Project%20Enquiry">✉ Contact Me</a>
+          <a class="button secondary" href="#projects">View Projects ↗</a>
         </div>
-        <div class="socials">
+        <div class="social-links">
+          <a href="https://github.com/purab-nikam" target="_blank" rel="noopener" aria-label="GitHub">GH</a>
           <a href="https://www.linkedin.com/in/purab-nikam-a0b453433" target="_blank" rel="noopener" aria-label="LinkedIn">in</a>
-          <a href="https://github.com/purab-nikam" target="_blank" rel="noopener" aria-label="GitHub">⌘</a>
           <a href="mailto:nikampurab105@gmail.com" aria-label="Email">✉</a>
         </div>
-        <div class="quick-info">
-          <div><strong>3 Projects</strong><small>Academic & practice work</small></div>
-          <div><strong>B.Sc. (CS)</strong><small>KKW, Nashik</small></div>
-          <div><strong>Dashboards</strong><small>Area of interest</small></div>
+        <div class="hero-facts">
+          <div><strong>Dashboard Development</strong><small>Area of interest</small></div>
+          <div><strong>Python · SQL · Web</strong><small>Technical toolkit</small></div>
         </div>
       </div>
-      <div class="hero-photo">
-        <div class="photo-glow"></div>
-        <img src="assets/purab.jpg" alt="Professional portrait of Purab Nikam">
-        <span class="photo-label">PURAB NIKAM · COMPUTER SCIENCE</span>
+      <div class="portrait-wrap">
+        <div class="portrait-glow"></div>
+        <div class="portrait-frame"><img src="assets/purab.jpg" alt="Portrait of Purab Nikam"></div>
+        <div class="portrait-caption">PURAB NIKAM <span>•</span> COMPUTER SCIENCE</div>
       </div>
     </section>
 
-    <section class="lower-grid">
-      <article class="panel" id="about">
-        <p class="section-label">01 / ABOUT</p>
-        <h3>About Me</h3>
-        <p>I'm a B.Sc. Computer Science student interested in web development, databases and dashboard development. I enjoy organising information, solving problems and presenting data in a simple, useful way.</p>
-        <div class="detail-box">
-          <p>🎓 <span><b>B.Sc. in Computer Science</b><br>K.K. Wagh College, Nashik</span></p>
-          <p>📍 <span>Nashik, Maharashtra</span></p>
-          <p>✉️ <span><a href="mailto:nikampurab105@gmail.com">nikampurab105@gmail.com</a></span></p>
-        </div>
-      </article>
-
-      <article class="panel" id="skills">
-        <p class="section-label">02 / TOOLKIT</p>
-        <h3>Skills & Interests</h3>
-        <div class="skills">
-          <span>🐍 Python</span><span>Flask</span><span>🐬 MySQL</span>
-          <span>HTML</span><span>CSS</span><span>JavaScript</span>
-          <span>SQL</span><span>Excel</span><span>Dashboard Design</span>
-          <span>Data Organisation</span>
-        </div>
-        <p class="skill-note">Currently developing my dashboard design and data analysis skills.</p>
-      </article>
-
-      <article class="panel projects-panel" id="projects">
-        <p class="section-label">03 / MY WORK</p>
-        <h3>Featured Projects</h3>
-        <div class="project">
-          <div class="project-art car-art">🚘<small>CAR CARE</small></div>
-          <div><h4>Car Wash Appointment System</h4><p>A web application concept to book car wash appointments, manage services and organise booking information.</p><span class="tech">Python · Flask · Database</span></div>
-        </div>
-        <div class="project">
-          <div class="project-art hotel-art">⌂<small>STAYEASE</small></div>
-          <div><h4>StayEase — Hotel Booking</h4><p>A hotel booking web application with room browsing, booking and admin management features.</p><span class="tech">Python · Flask · MySQL</span></div>
-        </div>
-        <div class="project">
-          <div class="project-art dashboard-art">▥<small>DATA VIEW</small></div>
-          <div><h4>Dashboard Development</h4><p>An area of interest: creating simple dashboards to organise information and make key figures easier to understand.</p><span class="tech">Excel · SQL · Data Presentation</span></div>
-        </div>
-      </article>
+    <section class="content-section" id="about">
+      <div class="section-heading"><span>01 / ABOUT</span><h3>A little about me</h3></div>
+      <p class="section-intro">I'm a B.Sc. Computer Science student interested in dashboard development, data organisation, databases and web technologies. I enjoy learning by building practical projects and presenting information in a simple, useful way.</p>
     </section>
 
-    <section class="contact" id="contact">
-      <div>
-        <p class="section-label">04 / CONTACT</p>
-        <h3>Let's Connect!</h3>
-        <p>Interested in an internship, dashboard project or learning opportunity? I'd be happy to hear from you.</p>
-        <p class="email-note">Email: <a href="mailto:nikampurab105@gmail.com">nikampurab105@gmail.com</a></p>
+    <section class="content-section" id="skills">
+      <div class="section-heading"><span>02 / TOOLKIT</span><h3>Skills & interests</h3></div>
+      <div class="skill-list">
+        <span>Python</span><span>SQL</span><span>MySQL</span><span>Excel</span>
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Flask</span>
+        <span>Dashboard Development</span><span>Data Organisation</span>
       </div>
-      <a class="button primary contact-button"
-         href="mailto:nikampurab105@gmail.com?subject=Internship%20or%20Project%20Enquiry&body=Hi%20Purab%2C%0A%0AI%20would%20like%20to%20connect%20with%20you%20about%20an%20opportunity.%0A%0ARegards%2C"
-         aria-label="Send an email to Purab Nikam">✉ Send Me an Email ↗</a>
+      <p class="muted">Currently strengthening my dashboard design and data analysis skills.</p>
+    </section>
+
+    <section class="content-section" id="projects">
+      <div class="section-heading"><span>03 / SELECTED WORK</span><h3>Projects I'm building</h3></div>
+      <div class="project-grid">
+        <article class="project-card">
+          <div class="project-icon car">01</div>
+          <div class="project-body"><span class="project-type">WEB APPLICATION</span><h4>Car Wash Appointment System</h4><p>A booking application concept for scheduling car wash appointments, managing services and organising customer bookings.</p><div class="tags">Python · Flask · Database</div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-icon stay">02</div>
+          <div class="project-body"><span class="project-type">WEB APPLICATION</span><h4>StayEase — Hotel Booking</h4><p>A hotel booking application with room browsing, booking workflows and an admin management area.</p><div class="tags">Python · Flask · MySQL</div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-icon data">03</div>
+          <div class="project-body"><span class="project-type">AREA OF INTEREST</span><h4>Dashboard Development</h4><p>Exploring clear ways to organise data, present key metrics and make information easier to understand.</p><div class="tags">Excel · SQL · Data Presentation</div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact">
+      <div><span class="section-kicker">04 / CONTACT</span><h3>Let's connect and create something useful.</h3><p>Interested in an internship, project or learning opportunity? Feel free to reach out.</p><a class="email-link" href="mailto:nikampurab105@gmail.com">nikampurab105@gmail.com ↗</a></div>
+      <a class="button primary" href="mailto:nikampurab105@gmail.com?subject=Internship%20or%20Project%20Enquiry&body=Hi%20Purab%2C%0A%0AI%20would%20like%20to%20connect%20with%20you.%0A%0ARegards%2C">Send an Email ↗</a>
     </section>
   </main>
 
